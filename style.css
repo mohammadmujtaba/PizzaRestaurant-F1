@@ -9,6 +9,10 @@ body {
   color: white;
 }
 
+nav {
+  position: sticky;
+  top: 0;
+}
 .first-half>a {
   text-decoration: none;
   color: white;
@@ -21,6 +25,7 @@ body {
 .image>img {
   width: 100%;
   height: 100%;
+  background-size: cover;
 }
 
 .cravings {
