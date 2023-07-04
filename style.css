@@ -86,6 +86,14 @@ body {
   margin-top: 30px;
 }
 
+@media (max-width:576px) {
+  .sec2 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+
 
 #menu>.sec1 {
   margin-top: 0;
@@ -132,7 +140,7 @@ body {
 
 
 #gallery>.container {
-  background-color: yellow;
+ 
   margin-inline: auto;
   width: 70vw;
   height: 60vh;
@@ -142,26 +150,28 @@ body {
 }
 
 .grid-container1{
-  background-color: orange;
+
+  background-image: url(images/pizza2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .grid-container2 {
-  background-color: brown;
+ 
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 10px;
 }
 .grid-container3 {
-  background-color: red;
+
   display: grid;
   grid-template-rows: 1fr 1fr;
   row-gap: 10px;
 }
 
 .grid-item1 {
-  background-color: white;
   background-image: url(images/pizza2.svg);
   background-repeat: no-repeat;
-  background-size: 5px;
+  background-size: contain;
 }
 
 .grid-item2 {
@@ -171,32 +181,42 @@ body {
 }
 
 .grid-item3 {
-  background-image: url(images/shake1.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.grid-item4 {
   background-image: url(images/Untitled.svg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
-.grid-item5 {
-  background-color: wheat;
-  background-image: url(images/bread.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.grid-item6 {
-  background-color: tomato;
+.grid-item4 {
   background-image: url(images/bread2.svg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
+.grid-item5 {
+
+  background-image: url(images/bread.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-item6 {
+
+  background-image: url( images/shake1.svg );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* FIND US */
+
+@media (max-width: 576px) {
+
+  #find-us .container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+
 .container>.part1, .container>.part2 {
   width: 50%;
 }
@@ -216,6 +236,12 @@ body {
 
 /*FOOTER */
 
+@media (max-width: 576px){
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .footer {
   margin-top: 100px;
